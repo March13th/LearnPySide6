@@ -1,7 +1,7 @@
 import sys
 
-from PySide6.QtCore import QSize,Qt
-from PySide6.QtWidgets import QApplication,QMainWindow,QPushButton
+from PySide6.QtCore import QSize, Qt
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
 class MainWindow(QMainWindow):
@@ -13,6 +13,7 @@ class MainWindow(QMainWindow):
         button = QPushButton("Press Me!")
 
         self.setCentralWidget(button)
+
 
 app = QApplication(sys.argv)
 

@@ -1,6 +1,6 @@
 import sys
 
-from PySide6.QtWidgets import QApplication,QMainWindow,QPushButton
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
 class MainWindow(QMainWindow):
@@ -19,8 +19,9 @@ class MainWindow(QMainWindow):
     def the_button_was_clicked(self):
         print('Clicked!')
 
-    def the_button_was_toggled(self,checked):
-        print('Checked?',checked)
+    def the_button_was_toggled(self, checked):
+        print('Checked?', checked)
+
 
 app = QApplication(sys.argv)
 

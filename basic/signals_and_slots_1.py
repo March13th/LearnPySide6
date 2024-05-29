@@ -1,6 +1,7 @@
-from PySide6.QtWidgets import QApplication,QMainWindow,QPushButton
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 import sys
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -16,6 +17,7 @@ class MainWindow(QMainWindow):
 
     def the_button_was_clicked(self):
         print("Clicked!")
+
 
 app = QApplication(sys.argv)
 

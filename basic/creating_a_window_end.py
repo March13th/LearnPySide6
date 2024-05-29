@@ -1,7 +1,7 @@
 import sys
 
-from PySide6.QtCore import QSize,Qt
-from PySide6.QtWidgets import QApplication,QMainWindow,QPushButton
+from PySide6.QtCore import QSize, Qt
+from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
 class MainWindow(QMainWindow):
@@ -12,9 +12,10 @@ class MainWindow(QMainWindow):
 
         button = QPushButton("Press Me!")
 
-        self.setMinimumSize(QSize(800,800))
-        self.setMaximumSize(QSize(1000,1000))
+        self.setMinimumSize(QSize(800, 800))
+        self.setMaximumSize(QSize(1000, 1000))
         self.setCentralWidget(button)
+
 
 app = QApplication(sys.argv)
 
