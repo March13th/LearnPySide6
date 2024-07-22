@@ -1,7 +1,8 @@
 import sys
 
 from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QApplication,QLineEdit,QMainWindow
+from PySide6.QtWidgets import QApplication, QLineEdit, QMainWindow
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -13,7 +14,6 @@ class MainWindow(QMainWindow):
         widget.setMaxLength(10)
         # widget.setInputMask('000.000.000.000;_')
         widget.setPlaceholderText("Enter your text")
-
 
         widget.returnPressed.connect(self.return_pressed)
         widget.selectionChanged.connect(self.selection_changed)
@@ -30,12 +30,13 @@ class MainWindow(QMainWindow):
         print("Selection changed")
         print(self.centralWidget().selectedText())
 
-    def text_changed(self,s):
+    def text_changed(self, s):
         print("Text changed...")
 
-    def text_edited(self,s):
+    def text_edited(self, s):
         print("Text edited...")
         print(s)
+
 
 app = QApplication(sys.argv)
 
